@@ -1,15 +1,45 @@
+# Online Course App
 
 **General Notes**
-
-An `onlinecourse` app has already been provided in this repo upon which you will be adding a new assesement feature.
-
-- If you want to develop the final project on Theia hosted by [IBM Developer Skills Network](https://labs.cognitiveclass.ai/), you will need to create the same project structure on Theia workspace and save it everytime you close the browser
-- Or you could develop the final project locally by setting up your own Python runtime and IDE
-- Hints for the final project are left on source code files
-- You may choose any cloud platform for deployment (default is IBM Cloud Foundry)
-- Depends on your deployment, you may choose any SQL database Django supported such as SQLite3, PostgreSQL, and MySQL (default is SQLite3)
+The "onlinecourse" app is the first application I built using the Django framework for practice purposes.🤗
 
 **ER Diagram**
-For your reference, we have prepared the ER diagram design for the new assesement feature.
+
+This is the ER diagram design for the system.
 
 ![Onlinecourse ER Diagram](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database/blob/master/static/media/course_images/onlinecourse_app_er.png)
+
+**Setup Instructions**
+
+### Set up a Virtual Environment
+1. Install necessary packages:
+    ```sh
+    pip install --upgrade distro-info
+    pip3 install --upgrade pip==23.2.1
+    pip install virtualenv
+    ```
+
+2. Create and activate a virtual environment:
+    ```sh
+    virtualenv djangoenv
+    source djangoenv/bin/activate
+    ```
+
+### Set up the Python Runtime
+1. Install the required Python packages:
+    ```sh
+    pip install -U -r requirements.txt
+    ```
+
+### Database Setup
+1. Create the initial migrations and generate the database schema:
+    ```sh
+    python3 manage.py makemigrations
+    python3 manage.py migrate
+    ```
+
+### Run the Server
+1. Start the development server:
+    ```sh
+    python3 manage.py runserver
+    ```
