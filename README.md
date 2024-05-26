@@ -1,16 +1,18 @@
 # Online Course App
 
+**Introduction**
+
+The "onlinecourse" app is a web application designed to manage and deliver online courses. It allows instructors to create and manage courses, lessons, and quizzes, while learners can enroll in courses, complete lessons, and take quizzes. This app is built using the **Django** framework as a practice project to learn and demonstrate web development skills.
+
 **General Notes**
 
-The "onlinecourse" app is the first application I built using the *Django* framework for practice purposes.🤗
-
+This is the first application I built with the **Django** framework for practice purposes. 🤗
 
 **ER Diagram**
 
 This is the ER diagram design for the system.
 
 ![Onlinecourse ER Diagram](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database/blob/master/static/media/course_images/onlinecourse_app_er.png)
-
 
 **Setup Instructions**
 
