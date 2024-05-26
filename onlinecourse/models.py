@@ -100,7 +100,7 @@ class Question(models.Model):
     content = models.CharField(max_length=200)
     grade = models.IntegerField(default=50)
 
-    def __str__(self) -> str:
+    def __str__(self):
         return "Question: " + self.content
     
     # method to calculate if the learner gets the score of the question
@@ -115,7 +115,7 @@ class Question(models.Model):
 # Choice Model
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    choice = models.CharField(max_length=200)
+    content = models.CharField(max_length=200)
     is_correct = models.BooleanField(default=False)
     
 
@@ -123,6 +123,6 @@ class Choice(models.Model):
 # One submission could have multiple choices
 # One choice could belong to multiple submissions
 class Submission(models.Model):
-   enrollment = models.ForeignKey(Enrollment, on_delete=models.CASCADE)
-   choices = models.ManyToManyField(Choice)
+    enrollment = models.ForeignKey(Enrollment, on_delete=models.CASCADE)
+    choices = models.ManyToManyField(Choice)
 
