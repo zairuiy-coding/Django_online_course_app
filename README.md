@@ -1,13 +1,16 @@
 # Online Course App
 
 **General Notes**
-The "onlinecourse" app is the first application I built using the Django framework for practice purposes.🤗
+
+The "onlinecourse" app is the first application I built using the *Django* framework for practice purposes.🤗
+
 
 **ER Diagram**
 
 This is the ER diagram design for the system.
 
 ![Onlinecourse ER Diagram](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database/blob/master/static/media/course_images/onlinecourse_app_er.png)
+
 
 **Setup Instructions**
 
